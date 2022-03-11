@@ -1,9 +1,9 @@
-const slideImg = document.getElementById('slideImg')
+img = document.getElementById('img')
 let i = 1
-const slider = () => {
+slider = () => {
   if (i > 3) { i = 1 }
-  let srcUrl = `imgs/${i}.jpg`
-  slideImg.setAttribute('src', srcUrl)
+  let url = `imgs/${i}.jpg`
+  img.setAttribute('src', url)
   i++
 }
 setInterval(slider, 1000)
